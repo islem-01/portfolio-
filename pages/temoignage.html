@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Témoignages - IIT</title>
+    <link rel="stylesheet" href="style_temoignage.css">
+</head>
+
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="title">
+            <span class="white-text">Port</span><span class="blue-text">folio</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="matieres.html">Matières</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                
+                <li class="dropdown">
+                    <!-- Dropdown de filtrage dans la barre de navigation -->
+                    <a href="temoignage.html">Témoignages</a>
+                    <div class="dropdown-content">
+                        <a href="?formation=informatique">Ingénierie en Informatique</a>
+                        <a href="?formation=datascience">Data Science</a>
+                        <a href="?formation=securite">Sécurité Informatique</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="contact">Contact</a>
+    </header>
+    <main>
+        <h1>Témoignages d'étudiants de l'IIT</h1>
+        <section class="iit-image">
+            <img src="../images/logo IIT.png" alt="IIT Logo" class="iit-logo">
+        </section>
+    
+        <!-- Vidéo de témoignage -->
+        <section class="testimonial-video">
+            <video autoplay="" loop="" muted="" playsinline="">
+                <source src="https://iit.tn/wp-content/uploads/2024/s4.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+        </section>
+    
+        <div class="testimonials-list">
+            <!-- Témoignage de Mariem -->
+            <div class="testimonial" data-formation="informatique">
+                <img src="https://via.placeholder.com/100" alt="Icône personne" class="testimonial-img">
+                <h2>Mariem</h2>
+                <p><strong>Formation : Ingénierie en Informatique</strong></p>
+                <blockquote>
+                    "L'IIT m'a permis de développer une expertise en informatique et d'obtenir un stage prestigieux dans une entreprise internationale."
+                </blockquote>
+            </div>
+            <!-- Témoignage d'Ahmed Ben Ali -->
+            <div class="testimonial" data-formation="datascience">
+                <img src="https://via.placeholder.com/100" alt="Icône personne" class="testimonial-img">
+                <h2>Ahmed Ben Ali</h2>
+                <p><strong>Formation : Data Science</strong></p>
+                <blockquote>
+                    "La formation en Data Science à l'IIT m'a donné les compétences nécessaires pour évoluer rapidement dans ce domaine dynamique et exigeant."
+                </blockquote>
+            </div>
+            <!-- Témoignage de Fatima Zahra -->
+            <div class="testimonial" data-formation="securite">
+                <img src="https://via.placeholder.com/100" alt="Icône personne" class="testimonial-img">
+                <h2>Fatima Zahra</h2>
+                <p><strong>Formation : Sécurité Informatique</strong></p>
+                <blockquote>
+                    "Grâce à l'IIT, j'ai acquis une solide expertise en cybersécurité et intégré une équipe de professionnels dans ce domaine passionnant."
+                </blockquote>
+            </div>
+        </div>
+    
+        <!-- Bouton d'inscription -->
+        <section class="register-btn">
+            <a href="https://iit.tn/" class="register-link">Inscrivez-vous à l'IIT</a>
+        </section>
+    </main>
+    
+    <!-- Réseaux sociaux -->
+    <footer>
+        <section class="social-media">
+            <h2>Connectez-vous avec nous :</h2>
+            <div class="icons">
+                <a href="https://github.com/islem-01" target="_blank">
+                    <img src="../images/github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/islem-zouari-32ba6b217/" target="_blank">
+                    <img src="../images/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </section>
+        <p>&copy; 2024 Mon Site Personnel | Tous droits réservés.</p>
+    </footer>
+
+    <script src="temoignage.js"></script>
+</body>
+
+</html>

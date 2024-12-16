@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mon Site Personnel</title>
+    <link rel="stylesheet" href="style_contact.css">
+</head>
+<body>
+        <!-- En-tête -->
+        <header>
+          <!-- Titre PORTFOLIO -->
+          <div class="title">
+              <span class="white-text">Port</span><span class="blue-text">folio</span>
+          </div>
+  
+          <!-- Menu de navigation -->
+          <nav>
+              <ul>
+                  <li><a href="../index.html">Accueil</a></li>
+                  <li><a href="parcours.html">Parcours</a></li>
+                  <li><a href="competences.html">Compétences</a></li>
+                  <li><a href="experiences.html">Expériences</a></li>
+                  <li><a href="matieres.html">Matières</a></li>
+                  <li><a href="quizz.html">Quizz</a></li>
+                  <li><a href="temoignage.html">Témoignage</a></li>
+              </ul>
+          </nav>
+          <!-- Correction du bouton Contact -->
+          <a href="pages/contact.html" class="contact">Contact</a>
+      </header>
+  
+    <main>
+        <div class="container">
+            <span class="big-circle"></span>
+            <img src="images/shape.png" class="square" alt="Décoration" />
+            <div class="form">
+              <div class="contact-info">
+                <h3 class="title">Contactez-nous</h3>
+                <div class="info">
+                  <div class="information">
+                    <img src="../images/location.png" class="icon" alt="Icône localisation" />
+                    <p>Route lafrane km 4</p>
+                  </div>
+                  <div class="information">
+                    <img src="../images/email.png" class="icon" alt="Icône email" />
+                    <p>zouari.islem01@gmail.com</p>
+                  </div>
+                  <div class="information">
+                    <img src="../images/phone.png" class="icon" alt="Icône téléphone" />
+                    <p>+216 21 602 638</p>
+                  </div>
+                </div>
+      
+                <div class="social-media">
+                  <p>Connectez-vous avec nous :</p>
+                  <div class="social-icons">
+                    <a href="https://github.com/islem-01" target="_blank">
+                        <img src="../images/github.png" alt="GitHub" >
+                    </a>
+                    <a href="https://www.linkedin.com/in/islem-zouari-32ba6b217/" target="_blank">
+                        <img src="../images/linkedin.png" alt="LinkedIn" >
+                    </a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+                <form action="index.html" autocomplete="off" method="POST">
+                  <h3 class="title">Contactez-nous</h3>
+                  <div class="input-container">
+                    <input type="text" name="name" class="input" id="name" required />
+                    <label for="name">Nom d'utilisateur</label>
+                    <span>Nom d'utilisateur</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="email" name="email" class="input" id="email"  required />
+                    <label for="email">Email</label>
+                    <span>Email</span>
+                 </div>
+                 
+                  <div class="input-container">
+                    <input type="tel" name="phone" class="input" id="phone" />
+                    <label for="phone">Téléphone</label>
+                    <span>Téléphone</span>
+                  </div>
+                  <div class="input-container textarea">
+                    <textarea name="message" class="input" id="message" required></textarea>
+                    <label for="message">Message</label>
+                    <span>Message</span>
+                  </div>
+                  <input type="submit" value="Envoyer" class="btn" />
+                </form>
+              </div>
+            </div>
+          </div>
+    </main>
+
+</body>
+</html>

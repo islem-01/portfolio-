@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="style_quizz.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="title">
+            <span class="white-text">Port</span><span class="blue-text">folio</span>
+        </div>
+
+        <!-- Menu de navigation -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="matieres.html">Matières</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a href="temoignage.html">Témoignage</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="contact">Contact</a>
+    </header>
+
+    <main id="quiz-container" class="quiz-container">
+        <span class="big-circle"></span>
+        <div id="start-screen">
+            <h2>Bienvenue au Quiz !</h2>
+            <p>Testez vos connaissances et amusez-vous !</p>
+            <button  onclick="startQuiz()">Démarrer le Quiz</button>
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+        </div>
+
+        <div id="question-screen" style="display: none;">
+            <div class="score">Score : <span id="score">0</span> / 15</div>
+            <div id="question" class="question"></div>
+            <ul id="options" class="options"></ul>
+            <button id="next-btn" style="display: none;" onclick="nextQuestion()">Suivant</button>
+        </div>
+        
+
+        <div id="end-screen" style="display: none;">
+            <h2>Quiz Terminé !</h2>
+            <p>Votre score final est : <span id="final-score"></span> / 15</p>
+            <button onclick="restartQuiz()">Recommencer le Quiz</button>
+        </div>
+    </main>
+    
+    <script src="script_quizz.js"></script>
+</body>
+</html>

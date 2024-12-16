@@ -1,0 +1,175 @@
+/* Réinitialisation des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style global */
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #202124; /* Fond sombre */
+}
+
+
+/* En-tête */
+header {
+    background-color: #202124;
+    color: white;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.white-text {
+    color: white;
+}
+
+.blue-text {
+    color:  #7c83fd;;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.contact {
+    text-decoration: none;    font-family: "Times New Roman", serif;
+    background-color:#7c83fd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact:hover {
+    text-decoration: none;
+    background-color: #abafff;
+    transform: scale(1.1);
+}
+
+/* Contenu principal */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #202124; /* Fond sombre */
+    color: #fff;
+}
+
+.biographie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+    gap: 50px;
+}
+
+.biographie .text {
+    flex: 1;
+    text-align: left;
+}
+
+.biographie h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.biographie h1 .blue-text {
+    color: #7c83fd; /* Couleur bleue pour Web Designer */
+}
+
+.biographie p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: #7c83fd;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #4a50c9;
+    transform: scale(1.05);
+}
+
+/* Réseaux sociaux */
+.social-media {
+    margin-top: 15px;
+}
+
+.social-media .icons {
+    display: flex;
+    justify-content:left;
+    gap: 20px;
+}
+
+.social-media .icons a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-media .icons a img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+/* Image de profil */
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #7c83fd;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .biographie {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+    }
+}
